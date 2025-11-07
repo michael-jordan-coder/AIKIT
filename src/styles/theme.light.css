@@ -1,0 +1,42 @@
+/* ============================================
+   THEME.LIGHT.CSS - Light Theme Semantic Mappings
+   ============================================
+   Semantic color tokens for light theme
+   These reference primitive tokens from tokens.css
+*/
+
+:root,
+[data-theme="light"] {
+  /* Background colors */
+  --color-bg: var(--color-neutral-50);
+  --color-surface: var(--color-white);
+  --color-surface-elevated: var(--color-white);
+  
+  /* Text colors */
+  --color-text-primary: var(--color-neutral-900);
+  --color-text-secondary: var(--color-neutral-500);
+  --color-text-muted: var(--color-neutral-500);
+  --color-text-disabled: var(--color-neutral-400);
+  
+  /* Border colors */
+  --color-border: var(--color-neutral-200);
+  --color-border-subtle: var(--color-neutral-100);
+  
+  /* Action colors */
+  --color-action-bg: var(--color-neutral-900);
+  --color-action-text: var(--color-white);
+  --color-action-hover: var(--color-neutral-800);
+  
+  /* Primary colors */
+  --color-primary: var(--color-neutral-900);
+  --color-primary-hover: var(--color-neutral-800);
+  
+  /* Accent colors */
+  --color-accent: var(--color-neutral-900);
+  --color-accent-hover: var(--color-neutral-800);
+  
+  /* Interactive states */
+  --color-interactive-bg: var(--color-neutral-50);
+  --color-interactive-hover: var(--color-neutral-100);
+}
+

@@ -1,0 +1,111 @@
+/* ============================================
+   TOKENS.CSS - Primitive Design Tokens
+   ============================================
+   All primitive values (colors, spacing, radius, typography, elevation)
+   These are the foundation values that semantic tokens reference.
+*/
+
+:root {
+  /* ============================================
+     COLOR PRIMITIVES - Neutral Palette
+     Source: shadcn (https://ui.shadcn.com/colors)
+     ============================================ */
+  --color-neutral-50: #fafafa;
+  --color-neutral-100: #f5f5f5;
+  --color-neutral-200: #e5e5e5;
+  --color-neutral-300: #d4d4d4;
+  --color-neutral-400: #a3a3a3;
+  --color-neutral-500: #737373;
+  --color-neutral-600: #525252;
+  --color-neutral-700: #404040;
+  --color-neutral-800: #262626;
+  --color-neutral-900: #171717;
+  --color-neutral-950: #0a0a0a;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* ============================================
+     SPACING SCALE (8px baseline grid)
+     ============================================ */
+  --sp-0: 0;
+  --sp-1: 0.25rem;   /* 4px */
+  --sp-2: 0.5rem;    /* 8px */
+  --sp-3: 0.75rem;   /* 12px */
+  --sp-4: 1rem;      /* 16px */
+  --sp-5: 1.25rem;   /* 20px */
+  --sp-6: 1.5rem;    /* 24px */
+  --sp-8: 2rem;      /* 32px */
+  --sp-9: 2.25rem;   /* 36px */
+  --sp-10: 2.5rem;   /* 40px */
+  --sp-12: 3rem;     /* 48px */
+  --sp-16: 4rem;     /* 64px */
+  --sp-20: 5rem;     /* 80px */
+  --sp-24: 6rem;     /* 96px */
+
+  /* ============================================
+     BORDER RADIUS SCALE
+     ============================================ */
+  --r-none: 0;
+  --r-sm: 0.25rem;      /* 4px */
+  --r-md: 0.5rem;       /* 8px */
+  --r-lg: 0.75rem;       /* 12px */
+  --r-xl: 1rem;         /* 16px */
+  --r-2xl: 1.5rem;      /* 24px */
+  --r-3xl: 2rem;        /* 32px */
+  --r-full: 9999rem;    /* Pill shape */
+
+  /* ============================================
+     TYPOGRAPHY SCALE
+     ============================================ */
+  --fs-xs: 0.75rem;      /* 12px */
+  --fs-sm: 0.875rem;     /* 14px */
+  --fs-base: 1rem;       /* 16px */
+  --fs-lg: 1.125rem;     /* 18px */
+  --fs-xl: 1.25rem;      /* 20px */
+  --fs-2xl: 1.5rem;      /* 24px */
+  --fs-3xl: 1.875rem;    /* 30px */
+  --fs-4xl: 2.5rem;      /* 40px */
+  --fs-5xl: 3.5rem;      /* 56px */
+
+  /* Typography weights */
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* Line heights (unitless) */
+  --lh-tight: 1.05;
+  --lh-snug: 1.1;
+  --lh-normal: 1.15;
+  --lh-relaxed: 1.2;
+  --lh-loose: 1.6;
+
+  /* Letter spacing */
+  --ls-tighter: -0.02em;
+  --ls-tight: -0.01em;
+  --ls-normal: 0em;
+  --ls-wide: 0.01em;
+  --ls-wider: 0.02em;
+
+  /* ============================================
+     ELEVATION / SHADOWS
+     ============================================ */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  /* ============================================
+     LAYOUT TOKENS
+     ============================================ */
+  --maxw-container: 120rem;  /* 1920px */
+  --maxw-content: 80rem;      /* 1280px */
+
+  /* ============================================
+     TRANSITION TOKENS
+     ============================================ */
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 300ms ease;
+}
+

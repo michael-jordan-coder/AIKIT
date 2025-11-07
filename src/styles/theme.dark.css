@@ -1,0 +1,78 @@
+/* ============================================
+   THEME.DARK.CSS - Dark Theme Semantic Mappings
+   ============================================
+   Semantic color tokens for dark theme
+   These reference primitive tokens from tokens.css
+*/
+
+[data-theme="dark"] {
+  /* Background colors */
+  --color-bg: var(--color-neutral-950);
+  --color-surface: var(--color-neutral-900);
+  --color-surface-elevated: var(--color-neutral-800);
+  
+  /* Text colors */
+  --color-text-primary: var(--color-neutral-50);
+  --color-text-secondary: var(--color-neutral-400);
+  --color-text-muted: var(--color-neutral-400);
+  --color-text-disabled: var(--color-neutral-600);
+  
+  /* Border colors */
+  --color-border: var(--color-neutral-800);
+  --color-border-subtle: var(--color-neutral-900);
+  
+  /* Action colors */
+  --color-action-bg: var(--color-white);
+  --color-action-text: var(--color-neutral-950);
+  --color-action-hover: var(--color-neutral-100);
+  
+  /* Primary colors */
+  --color-primary: var(--color-white);
+  --color-primary-hover: var(--color-neutral-100);
+  
+  /* Accent colors */
+  --color-accent: var(--color-neutral-50);
+  --color-accent-hover: var(--color-neutral-100);
+  
+  /* Interactive states */
+  --color-interactive-bg: var(--color-neutral-900);
+  --color-interactive-hover: var(--color-neutral-800);
+}
+
+/* Fallback for prefers-color-scheme: dark */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    /* Background colors */
+    --color-bg: var(--color-neutral-950);
+    --color-surface: var(--color-neutral-900);
+    --color-surface-elevated: var(--color-neutral-800);
+    
+    /* Text colors */
+    --color-text-primary: var(--color-neutral-50);
+    --color-text-secondary: var(--color-neutral-400);
+    --color-text-muted: var(--color-neutral-400);
+    --color-text-disabled: var(--color-neutral-600);
+    
+    /* Border colors */
+    --color-border: var(--color-neutral-800);
+    --color-border-subtle: var(--color-neutral-900);
+    
+    /* Action colors */
+    --color-action-bg: var(--color-white);
+    --color-action-text: var(--color-neutral-950);
+    --color-action-hover: var(--color-neutral-100);
+    
+    /* Primary colors */
+    --color-primary: var(--color-white);
+    --color-primary-hover: var(--color-neutral-100);
+    
+    /* Accent colors */
+    --color-accent: var(--color-neutral-50);
+    --color-accent-hover: var(--color-neutral-100);
+    
+    /* Interactive states */
+    --color-interactive-bg: var(--color-neutral-900);
+    --color-interactive-hover: var(--color-neutral-800);
+  }
+}
+
