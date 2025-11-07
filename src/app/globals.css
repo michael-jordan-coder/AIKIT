@@ -1,26 +1,114 @@
 @import "tailwindcss";
 
+/* Neutral color palette from shadcn (https://ui.shadcn.com/colors) */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  /* Neutral color tokens */
+  --neutral-50: #fafafa;
+  --neutral-100: #f5f5f5;
+  --neutral-200: #e5e5e5;
+  --neutral-300: #d4d4d4;
+  --neutral-400: #a3a3a3;
+  --neutral-500: #737373;
+  --neutral-600: #525252;
+  --neutral-700: #404040;
+  --neutral-800: #262626;
+  --neutral-900: #171717;
+  --neutral-950: #0a0a0a;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Semantic color tokens - Light mode */
+  --bg: var(--neutral-50);
+  --surface: #ffffff;
+  --border: var(--neutral-200);
+  --text: var(--neutral-900);
+  --muted: var(--neutral-500);
+  --accent: var(--neutral-900);
+  --primary: var(--neutral-900);
+  
+  /* Typography tokens */
+  --fs-h1: 3.5rem;
+  --fs-h2: 2.5rem;
+  --fs-h3: 1.875rem;
+  --fs-h4: 1.5rem;
+  --fs-body-lg: 1.125rem;
+  --fs-body: 1rem;
+  --fs-caption: 0.875rem;
+  
+  /* Spacing tokens (8px baseline) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  
+  /* Layout tokens */
+  --maxw: 120rem;
+  
+  /* Radius tokens */
+  --radius-button: 9999rem;
+  --radius-card: 1.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Semantic color tokens - Dark mode */
+    --bg: var(--neutral-950);
+    --surface: var(--neutral-900);
+    --border: var(--neutral-800);
+    --text: var(--neutral-50);
+    --muted: var(--neutral-400);
+    --accent: var(--neutral-50);
+    --primary: #ffffff;
   }
 }
 
+@theme inline {
+  /* Background colors */
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  
+  /* Text colors */
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-primary: var(--primary);
+  
+  /* Border colors */
+  --color-border: var(--border);
+  
+  /* Font families */
+  --font-sans: var(--font-inter), "SF Pro Text", Helvetica, system-ui, -apple-system, "Segoe UI", sans-serif;
+  
+  /* Typography scale */
+  --font-size-h1: var(--fs-h1);
+  --font-size-h2: var(--fs-h2);
+  --font-size-h3: var(--fs-h3);
+  --font-size-h4: var(--fs-h4);
+  --font-size-body-lg: var(--fs-body-lg);
+  --font-size-body: var(--fs-body);
+  --font-size-caption: var(--fs-caption);
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  letter-spacing: 0em;
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
